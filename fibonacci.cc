@@ -2,7 +2,6 @@
 // So wie es aussieht liegt ein Fehler in der Aufgabenstellung vor, da
 // nach der Fibonacci Folge gilt f0 = 0, f1 = 1 und f2 = 1 und nicht f1 = 0 und f2 = 1.
 int  fibonacci(int number) {
-	//Punkt b) i)
     // Mit unsigned long long können f0, f1, fi in dem Wertebereich 0 bis 18446744073709551615 liegen.
     unsigned long long f0 = 0, f1 = 1, fi;
     std::cout << f0 << std::endl;
@@ -24,20 +23,18 @@ int main () {
     std::cout << "Geben Sie eine Zahl N ein: ";
     std::cin >> N;
 
-    // Punkt a) i) 
+
     // Funktionniert jetzt nicht mehr, da fibonacci() für Punkt a) ii) abgeändert wurde.
     //std::cout << fibonacci(N);
 
-	// Punkt a) ii)
+
     fibonacci(N);
-    
-    /* Punkt a) iii)
+ 
      * Wenn fi z.B. als Integer definiert wurde und grösser als 2^(31) - 1 = 2147483647 
      * wird, dann ist fi ausserhalb des Wertebereiches eines Integers und 
      * das Programm gibt eine negative Zahl zurück.
      */
-     
-    // Punkt b) ii)
+    
     // Das Programm läuft auch für N = 200 ohne nennenswerte Verzögerung auf dem genutzten Computer.
     // Die Schnelligkeit des Programms ist computerabhängig und müsste eigentlich mit der O-Notation
     // definiert werden, damit man einen vergleichbaren Wert hat.
